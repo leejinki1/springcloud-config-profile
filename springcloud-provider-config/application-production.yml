@@ -10,7 +10,7 @@ spring:
       username: root
       password: booszy
   application:
-    name: springcloud-provider
+    name: springcloud-provider-config
   profiles:
     active: production
 logging:
