@@ -21,4 +21,4 @@ logging:
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
     com.yasaka.stock : debug
 server:
-  port: 813
+  port: 811
