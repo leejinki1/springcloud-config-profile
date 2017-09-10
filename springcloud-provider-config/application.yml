@@ -1,6 +1,5 @@
 server:
-  port: 8101
-#  context-path: /provider
+  port: 8100
 spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
@@ -13,7 +12,7 @@ spring:
       username: root
       password: booszy
   application:
-    name: springcloud-provider
+    name: springcloud-provider-config
 logging:
   level:
     root: info
@@ -21,13 +20,3 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
     com.yasaka.stock : debug
-eureka:
-  client:
-    healthcheck:
-      enabled: true
-    service-url:
-      defaultZone: http://root:booszy@localhost:8761/eureka
-  instance:
-#    home-page-url-path: /provider
-    prefer-ip-address: true
-    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
