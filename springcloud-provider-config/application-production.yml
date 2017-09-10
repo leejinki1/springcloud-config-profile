@@ -12,7 +12,7 @@ spring:
   application:
     name: springcloud-provider
   profiles:
-    active: dev
+    active: production
 logging:
   level:
     root: info
