@@ -1,5 +1,8 @@
 server:
   port: 8400
+spring:
+  profiles:
+    active: dev
 zuul:
   routes:
     springcloud-consumer-config: /consumer/**
