@@ -7,4 +7,4 @@ zuul:
   routes:
     springcloud-consumer-config: /consumer/**
     springcloud-provider-config: /provider/**
-    sensitiveHeaders:
+    sensitiveHeaders: "*"
