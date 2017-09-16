@@ -1,4 +1,10 @@
 spring:
+  application:
+    name: springcloud-provider-config
+  redis:
+    host: 127.0.0.1
+    password: 123456
+    port: 6379
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
