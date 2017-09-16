@@ -29,4 +29,4 @@ keycloak:
          - patterns:  /consumer/user/list
     - authRoles: test
       securityCollections:
-         - patterns:  /consumer/user/info
+         - patterns:  /provider/user/list
