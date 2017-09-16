@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: springcloud-provider-config
   redis:
     host: 127.0.0.1
     password: 123456
@@ -12,15 +10,13 @@ spring:
       ddl-auto: update
   datasource:
     druid:
-    #   url: jdbc:mysql://192.168.0.245:3306/spcloud
-    #   url: jdbc:mysql://172.17.0.1:3306/spcloud
       url: jdbc:mysql://localhost:3306/spcloud
       username: root
       password: booszy
   application:
     name: springcloud-provider-config
   profiles:
-    active: dev
+    active: production
 logging:
   level:
     root: info
