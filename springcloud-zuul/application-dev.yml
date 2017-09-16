@@ -27,3 +27,6 @@ keycloak:
     - authRoles: users
       securityCollections:
          - patterns:  /consumer/user/list
+    - authRoles: test
+      securityCollections:
+         - patterns:  /consumer/user/info
