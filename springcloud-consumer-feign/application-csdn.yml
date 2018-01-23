@@ -6,6 +6,9 @@ logging:
 feign:
   hystrix:
     enabled: true
+ribbon:
+  ReadTimeout:  30000
+  ConnectTimeout:  15000
 hystrix:
   command:
     default:
